@@ -1,2 +1,2 @@
 # OCI-FAST-TRACK_Hub
-[lab](/imagenes/Introduccion.md)
+[lab](/Laboratorio001/Introduccion.md)
