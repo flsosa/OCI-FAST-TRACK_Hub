@@ -28,11 +28,11 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 ![](./Imagenes/imagen003.png)
 
-4. Ingresar la informacion que se detalla a continuación:
+4. Ingresar la información que se detalla a continuación:
 
-   -**_Nombre_**: VCN1region1
-   -**_Crear en compartimiento_**: déjelo tal cual.
-   -**_Bloque CIDR_**: 192.168.0.0/16
+   - **_Nombre_**: VCN1region1
+   - **_Crear en compartimiento_**: déjelo tal cual.
+   - **_Bloque CIDR_**: 192.168.0.0/16
   
   ![](./Imagenes/imagen004.png)
 
@@ -41,6 +41,7 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 #### Paso 2: Crear subredes
 
-1. Ir a la VCN que se creo anteriormente. 
-2. 
+1. Ir a la VCN que se creo anteriormente. **Redes** :arrow_right: **VCN CREADA EN EL PASO 1**
+2. Haga clicK en Crear subred.
+3. 
 
