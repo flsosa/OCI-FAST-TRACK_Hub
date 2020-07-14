@@ -32,8 +32,7 @@
    - Paso 4: Suscribirse a una nueva Región.
    
    ![](./imagenes/imagen6.png)
-   
- 
+   .
 ## Arquitectura de Oracle Cloud :pushpin:
 
 ### Regiones y Dominio de Disponibilidad
@@ -57,3 +56,31 @@ Los compartimentos son los bloques de construcción principales que utiliza para
 Cuando se aprovisiona su arrendamiento, se crea un compartimento raíz para usted. Su compartimento raíz contiene todos sus recursos en la nube. Puede pensar en el compartimento raíz como una carpeta raíz en un sistema de archivos.
 
  ![](./imagenes/imagen8.png)
+
+Puede crear compartimentos debajo de su compartimento raíz para organizar sus recursos en la nube de una manera que se alinee con sus objetivos de gestión de recursos. A medida que crea compartimentos, controla el acceso a ellos creando políticas que especifican qué acciones pueden tomar los grupos de usuarios sobre los recursos en esos compartimentos.
+
+#### Crear un compartimento :pencil2:
+
+1. Abrir el menú de navegación . En **Gobierno y administración** --> **Identidad** y haga click en **Compartimentos** .
+
+2. Navegar hasta el compartimento en el que desea crear el **nuevo compartimento**
+
+3. Complete los campos solicitados:
+   - _Nombre_:Máximo 100 caracteres.
+   - _Descripción_ : puede modificar este paso mas adelante
+   - _Compartimiento_: se muestra el comparimiento en el que esta posicionado.
+   - _Etiquetas_: Opcional.
+  
+ 3. Crear **Compartimiento**.
+ 
+ ## Resumiendo :bulb:
+1. Trabajamos con la Interfaz de Oracle Cloud.
+2. Repasamos los conceptos básicos de la Arquitectura de Oracle Cloud.
+3. Realizamos una suscripción a una región secundaria.
+4. Creamos un Compartimiento.
+
+## Para finalizar puedes realizar una prueba conceptual :trophy:
+
+# Te espereamos en el próximo Laboratorio  :rocket:
+
+[Regrasar a la Pagina Principal :arrow_left:] 
