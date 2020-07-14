@@ -12,7 +12,7 @@
 - Contar tres instancia de compute.
 
 
-## Paso 1: Crear VCN
+#### Paso 1: Crear VCN
 
 En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de ellos. Teniendo en cuenta lo siguiente:
 
@@ -30,12 +30,17 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 4. Ingresar la informacion que se detalla a continuación:
 
-   -**_Nombre_**: un nombre descriptivo para la VCN
+   -**_Nombre_**: VCN1region1
    -**_Crear en compartimiento_**: déjelo tal cual.
-   -**_Bloque CIDR_**: un bloque CIDR único y contiguo para la VCN. /16-/30.
+   -**_Bloque CIDR_**: 192.168.0.0/16
   
   ![](./Imagenes/imagen004.png)
 
-5. Crear VCN.
+5. **Crear VCN**.
 
+
+#### Paso 2: Crear subredes
+
+1. Ir a la VCN que se creo anteriormente. 
+2. 
 
