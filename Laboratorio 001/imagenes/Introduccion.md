@@ -13,4 +13,4 @@
 
 ### Paso 1: Acceder a la consola de Oracle Cloud 
 
-1. Ingresar a [Oracle com](https://www.oracle.com/index.html)
+1. Ingresar a [Sign In](https://console.us-ashburn-1.oraclecloud.com/)
