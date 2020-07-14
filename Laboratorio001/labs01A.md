@@ -83,4 +83,4 @@ Puede crear compartimentos debajo de su compartimento raíz para organizar sus r
 
 # Te espereamos en el próximo Laboratorio  :rocket:
 
-[Regrasar a la Pagina Principal :arrow_left:] 
+[Regrasar a la Pagina Principal :arrow_left:] ((../README.md)
