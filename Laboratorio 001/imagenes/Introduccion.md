@@ -35,3 +35,25 @@
    
  
 ## Arquitectura de Oracle Cloud :pushpin:
+
+### Regiones y Dominio de Disponibilidad
+Oracle Cloud Infrastructure está alojado en [regiones y dominios de disponibilidad](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) . Una región es un área geográfica localizada, y un dominio de disponibilidad es uno o más centros de datos ubicados dentro de una región
+
+ ![](./Regiones.png)
+ 
+Una región está compuesta por uno o más dominios de disponibilidad . La mayoría de los recursos de Oracle Cloud Infrastructure son específicos de una región, como una red de nube virtual, o específicos del dominio de disponibilidad , como una instancia de cómputo. El tráfico entre dominios de disponibilidad y entre regiones está cifrado.
+
+ ![](./imagenes/imagen7.png)
+
+#### Dominio de Falla
+Un dominio de falla es una agrupación de hardware e infraestructura dentro de un dominio de disponibilidad . Cada dominio de disponibilidad contiene tres dominios de falla.
+Caso de uso de Dominio de Falla:
+- Proteger contra fallas inesperadas de hardware o fallas de la fuente de alimentación.
+- Proteger contra interrupciones planificadas debido a Calcular el mantenimiento de hardware.
+
+### Compartimientos
+Los compartimentos son los bloques de construcción principales que utiliza para organizar sus recursos en la nube. Utiliza compartimentos para organizar y aislar tus recursos para que sea más fácil administrarlos y asegurar el acceso a ellos.
+
+Cuando se aprovisiona su arrendamiento, se crea un compartimento raíz para usted. Su compartimento raíz contiene todos sus recursos en la nube. Puede pensar en el compartimento raíz como una carpeta raíz en un sistema de archivos.
+
+ ![](./imagenes/imagen8.png)
