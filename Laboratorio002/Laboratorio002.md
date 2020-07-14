@@ -21,7 +21,21 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 1. Abrir el menú de navegación. En **Infraestructura básica** :arrow_right: **Redes** :arrow_right: **Redes virtuales en la nube**.
 2. Verificar si se encuentra trabajando en el **compartimiento** correcto.
-3. **Crear red virtual en la nube**.
+
 ![](./Imagenes/imagen002.png)
-4. 
+
+3. **Crear red virtual en la nube**.
+
+![](./Imagenes/imagen003.png)
+
+4. Ingresar la informacion que se detalla a continuación:
+
+   -**_Nombre_**: un nombre descriptivo para la VCN
+   -**_Crear en compartimiento_**: déjelo tal cual.
+   -**_Bloque CIDR_**: un bloque CIDR único y contiguo para la VCN. /16-/30.
+  
+  ![](./Imagenes/imagen004.png)
+
+5. Crear VCN.
+
 
