@@ -41,7 +41,28 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 #### Paso 2: Crear subredes
 
-1. Ir a la VCN que se creo anteriormente. **Redes** :arrow_right: **VCN CREADA EN EL PASO 1**
+1. **Redes** :arrow_right: **VCN CREADA EN EL PASO 1**
 2. Haga clicK en Crear subred.
-3. 
+3. Ingresar los siguientes datos: 
+
+  - _Nombre_: Subred_publica1
+  - _Tipo de Subred_: Seleccionar **Especificar dominio de Disponibilidad**, por ejemplo: CQDb:US-ASHBURN-AD1
+  - _Bloque CIDR_: Proporcione un bloque CIDR, por ejemplo: 192.168.1.0/24
+  - _Tablas de Rutas_ : Predeterminado.
+  - _Acceso a la subred_: Seleccionar Subred Pública. **No se puede actualizar más adelante**
+  - _DNS_: Predeterminado. **Se pueden moficar**
+  - _Opciones DHCP_: Predeterminado. **Se pueden modificar**
+  - _Listas de Seguridad_: Predeterminado. **Se pueden modificar**
+ 
+4. Crear Subred. 
+
+5. Repita los pasos 2 y 3 usando los datos de la tabla adyacente para crear las tres subredes restantes para vcn1R1:
+
+| VCN | CIDR BLOCK | SUBRED | SUBRED CIDR BLOCK | SUBRED ACCESO | AD |
+|----|--------------|-------|-------------------|---------------|----|
+|VCN1region1 | 192.168.0.0/16 | Subred_ps1|192.168.1.0/24| Public | AD1|
+|             |                | Subred_pv2| 192.168.2.0/24|Private | AD2|
+|              |               | Subred_ps3| 192.168.3.0/24|Public | AD3|
+|              |               | Subred_pv4 | 192.168.5.0/24 |Private | AD3|
+
 
