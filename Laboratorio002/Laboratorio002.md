@@ -50,13 +50,13 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
   - _Bloque CIDR_: Proporcione un bloque CIDR, por ejemplo: 192.168.1.0/24
   - _Tablas de Rutas_ : Predeterminado.
   - _Acceso a la subred_: Seleccionar Subred Pública. **No se puede actualizar más adelante**
-  - _DNS_: Predeterminado. **Se pueden moficar**
-  - _Opciones DHCP_: Predeterminado. **Se pueden modificar**
-  - _Listas de Seguridad_: Predeterminado. **Se pueden modificar**
+  - _DNS_: Predeterminado. 
+  - _Opciones DHCP_: Predeterminado. 
+  - _Listas de Seguridad_: Predeterminado. 
  
 4. Crear Subred. 
 
-5. Repita los pasos 2 y 3 usando los datos de la tabla adyacente para crear las tres subredes restantes para vcn1R1:
+5. Repita el paso 2  usando los datos de la tabla adyacente para crear las tres subredes restantes para vcn1R1:
 
 | VCN | CIDR BLOCK | SUBRED | SUBRED CIDR BLOCK | SUBRED ACCESO | AD |
 |----|--------------|-------|-------------------|---------------|----|
@@ -64,5 +64,22 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 |             |                | Subred_pv2| 192.168.2.0/24|Private | AD2|
 |              |               | Subred_ps3| 192.168.3.0/24|Public | AD3|
 |              |               | Subred_pv4 | 192.168.5.0/24 |Private | AD3|
+
+
+#### Paso3: Crear VCN con Asistente de VCN
+
+1.   Crear VCN en la Región Principal. Por ejemplo: ASHBURN.
+
+1.2  Click en **Redes**:arrow_right:**Iniciar Asistente de VCN**
+
+1.2  Seleccionar :arrow_right: **VCN con  conexón a Internet** :arrow_right: **Iniciar**
+
+1.3  Proporcionar un nombre. Por ejemplo: VCN2region1
+
+1.4  Verificar que todos los datos sean correctos :arrow_right: **Siguiente**
+
+1.5  Revisar y crear :arrow_right: **crear**
+
+2.   Repitir procedimiento para crear VCN en la región Secundaria.
 
 
