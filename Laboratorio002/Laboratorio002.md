@@ -12,82 +12,26 @@
 - Contar tres instancia de compute.
 
 
-## VIRTUAL CLOUD NETWORK :cloud:
+## PRIMER PASO: CREAR UNA RED VIRTUAL EN LA NUBE 
 
+En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de ellos. 
 
-#### Paso 1: Crear VCN
+| Nombre de VCN | REGION | 
+|----------------|-------|
+| demoVCN1R1 | US-ASHBURN |
+| demoVCN2R1|US-ASHBURN |
+| demoVCN3R2 |SA.SAOPAULO|
 
-En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de ellos. Teniendo en cuenta lo siguiente:
+Abre el menú de navegación. En Infraestructura principal , vaya a Redes y haga clic en Redes de nube virtual .
 
-- Crear dos VCN en la **región principal**.
-- Crear una VCN en una **región secundaria**.
+Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el lado izquierdo de la consola.
 
-1. Abrir el menú de navegación. En **Infraestructura básica** :arrow_right: **Redes** :arrow_right: **Redes virtuales en la nube**.
-2. Verificar si se encuentra trabajando en el **compartimiento** correcto.
+Haga clic en Crear red virtual en la nube .
 
-![](./Imagenes/imagen002.png)
+En el cuadro de diálogo, ingrese un Name ManagementVCN para su red de nube virtual.
 
-3. **Crear red virtual en la nube**.
+Asegúrese de que Crear solo red virtual en la nube esté seleccionado.
 
-![](./Imagenes/imagen003.png)
+Elija un bloque CIDR - 10.0.0.0/24 y mantenga las opciones restantes tal como están.
 
-4. Ingresar la información que se detalla a continuación:
-
-   - **_Nombre_**: VCN1region1
-   - **_Crear en compartimiento_**: déjelo tal cual.
-   - **_Bloque CIDR_**: 192.168.0.0/16
-  
-  ![](./Imagenes/imagen004.png)
-
-5. **Crear VCN**.
-
-
-#### Paso 2: Crear subredes
-
-1. **Redes** :arrow_right: **VCN CREADA EN EL PASO 1**
-2. Haga clicK en Crear subred.
-3. Ingresar los siguientes datos: 
-
-  - _Nombre_: Subred_publica1
-  - _Tipo de Subred_: Seleccionar **Especificar dominio de Disponibilidad**, por ejemplo: CQDb:US-ASHBURN-AD1
-  - _Bloque CIDR_: Proporcione un bloque CIDR, por ejemplo: 192.168.1.0/24
-  - _Tablas de Rutas_ : Predeterminado.
-  - _Acceso a la subred_: Seleccionar Subred Pública. **No se puede actualizar más adelante**
-  - _DNS_: Predeterminado. 
-  - _Opciones DHCP_: Predeterminado. 
-  - _Listas de Seguridad_: Predeterminado. 
- 
-4. Crear Subred. 
-
-5. Repita el paso 2  usando los datos de la tabla adyacente para crear las tres subredes restantes para vcn1R1:
-
-| VCN | CIDR BLOCK | SUBRED | SUBRED CIDR BLOCK | SUBRED ACCESO | AD |
-|----|--------------|-------|-------------------|---------------|----|
-|VCN1region1 | 192.168.0.0/16 | Subred_ps1|192.168.1.0/24| Public | AD1|
-|             |                | Subred_pv2| 192.168.2.0/24|Private | AD2|
-|              |               | Subred_ps3| 192.168.3.0/24|Public | AD3|
-|              |               | Subred_pv4 | 192.168.5.0/24 |Private | AD3|
-
-
-#### Paso3: Crear VCN con Asistente de VCN
-
-1.   Crear VCN en la Región Principal. Por ejemplo: ASHBURN.
-
-1.2  Click en **Redes**:arrow_right:**Iniciar Asistente de VCN**
-
-1.2  Seleccionar :arrow_right: **VCN con  conexón a Internet** :arrow_right: **Iniciar**
-
-1.3  Proporcionar un nombre. Por ejemplo: VCN2region1
-
-1.4  Verificar que todos los datos sean correctos :arrow_right: **Siguiente**
-
-1.5  Revisar y crear :arrow_right: **crear**
-
-2.   Repitir procedimiento para crear VCN en la región Secundaria.
-
-
-
-## VNC - LOCAL PEERING :cloud::left_right_arrow::cloud:
-
-
-
+Haga clic en Crear red virtual en la nube (Esto crea un VCN, y puede ver la página de detalles del VCN creado.
