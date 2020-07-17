@@ -12,6 +12,9 @@
 - Contar tres instancia de compute.
 
 
+## VIRTUAL CLOUD NETWORK :cloud:
+
+
 #### Paso 1: Crear VCN
 
 En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de ellos. Teniendo en cuenta lo siguiente:
@@ -81,5 +84,10 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 1.5  Revisar y crear :arrow_right: **crear**
 
 2.   Repitir procedimiento para crear VCN en la región Secundaria.
+
+
+
+## VNC - LOCAL PEERING :cloud::left_right_arrow::cloud:
+
 
 
