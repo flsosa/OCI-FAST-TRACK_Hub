@@ -22,7 +22,7 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 | demoVCN2R1|US-ASHBURN |
 | demoVCN3R2 |SA.SAOPAULO|
 
-Abre el menú de navegación. En Infraestructura principal , vaya a Redes y haga clic en Redes de nube virtual .
+1. Abre el menú de navegación. En **Infraestructura principal** , vaya a **Redes** y haga click en **Redes de nube virtual** .
 
 Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el lado izquierdo de la consola.
 
