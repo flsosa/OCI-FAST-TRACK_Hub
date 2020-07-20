@@ -45,6 +45,9 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
 ### Ahora crearemos recursos adicionales necesarios para las instancias en este demoVCN1R1
 
 7. Navegue a **puertas de enlace de Internet** en el panel lateral izquierdo y haga click en **Crear puerta de enlace de Internet**. Proporcione un nombre como **InternetGW**
+
+![](./Imagenes/img002.png)
+
 8. Haga clic en Tabla de ruta predeterminada para ManagementVCN .
 
 9. Click en Editar reglas de ruta y agregue otra regla con lo siguiente:
@@ -53,4 +56,43 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
      |-----------------|--------------------------|
      |**Bloque CIDR de destino**| **0.0.0.0/0**|
      |**Puerta de enlace de Internet de destino**| **InternetGW**|
+     
+     
+     ![](./Imagenes/img003.png)
+  
+  
+ ####  Ahora vamos a crear las subredes
+ 
+ 10. Redes :arrow_right: VCN :arrow_right: Crear Subredes
+  
+  | VCN | CIDR BLOCK | SUBRED | SUBRED CIDR BLOCK | SUBRED ACCESO | AD |
+|----|--------------|-------|-------------------|---------------|----|
+|VCN1region1 | 192.168.0.0/16 | Subred_ps1|192.168.1.0/24| Public | AD1|
+|             |                | Subred_pv2| 192.168.2.0/24|Private | AD2|
+|              |               | Subred_ps3| 192.168.3.0/24|Public | AD3|
+|              |               | Subred_pv4 | 192.168.5.0/24 |Private | AD3|
+
+
+### CREAR VCN2 REGION PRINCIPAL - VCN3 REGION SECUNDARIA: ASISTENTE DE VCN 
+
+1. Región Principal: ASHBURN.
+
+* Click en **Redes**:arrow_right:**Iniciar Asistente de VCN**
+
+* Seleccionar :arrow_right: **VCN con  conexión a Internet** :arrow_right: **Iniciar
+
+* Proporcionar un nombre. Por ejemplo: VCN2region1
+
+* Verificar que todos los datos sean correctos :arrow_right: **Siguiente**
+
+* Revisar y crear :arrow_right: **crear**
+
+2. Repetir procedimiento para crear VCN en la región Secundaria.
+
+
+
+
+     
+     
+   
 
