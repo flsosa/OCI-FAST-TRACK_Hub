@@ -73,6 +73,7 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
 |              |               | Subred_pv4 | 192.168.5.0/24 |Private | AD3|
 
 
+
 ### CREAR VCN2 REGION PRINCIPAL - VCN3 REGION SECUNDARIA: ASISTENTE DE VCN 
 
 1. Región Principal: ASHBURN.
@@ -89,6 +90,40 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
 
 2. Repetir procedimiento para crear VCN en la región Secundaria.
 
+
+## Práctica 2: Crear una instancia por VCN- Región Principal 
+
+En esta práctica, creará instancias en cada uno de las VCN creadas en la Región principal: 
+
+1. Menú :arrow_right: Calcular :arrow_right:Instancias :arrow_right:Crear instancia
+2. Complete con la información que se detalla a cotinuación:
+
+| XXXXXX | XXXXXXXXXXX|
+|--------|------------|
+|Nombre | ManagementVM|
+|Dominio de disponibilidad|AD-1|
+|Imagen del sistema operativo|Oracle Linux 7.6|
+|Tipo de instancia |máquina virtual|
+|Forma de instancia| VM.Standard2.1|
+|Claves SSH | agregue su clave pública SSH|
+|Virtual Cloud Network | demoVCN1R1|
+|Subred | Subred_ps1|
+
+3. Deje el resto como predeterminado y haga clicK en Crear.
+
+4. Crear instancia n°2 en VCN demoVNC2R1
+
+
+| XXXXXX | XXXXXXXXXXX|
+|--------|------------|
+|Nombre | demoVCN2R1|
+|Dominio de disponibilidad|AD-2|
+|Imagen del sistema operativo|Oracle Linux 7.6|
+|Tipo de instancia |máquina virtual|
+|Forma de instancia| VM.Standard2.1|
+|Claves SSH | agregue su clave pública SSH|
+|Virtual Cloud Network | demoVCN1R1|
+|Subred | Subred Pública|
 
 
 
