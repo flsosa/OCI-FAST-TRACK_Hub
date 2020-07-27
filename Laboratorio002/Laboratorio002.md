@@ -91,7 +91,7 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
 2. Repetir procedimiento para crear VCN en la región Secundaria.
 
 
-## Práctica 2: Crear una instancia por VCN- Región Principal 
+# Práctica 2: Crear una instancia por VCN- Región Principal 
 
 En esta práctica, creará instancias en cada uno de las VCN creadas en la Región principal: 
 
@@ -100,7 +100,7 @@ En esta práctica, creará instancias en cada uno de las VCN creadas en la Regi�
 
 | XXXXXX | XXXXXXXXXXX|
 |--------|------------|
-|Nombre | ManagementVM|
+|Nombre | web1|
 |Dominio de disponibilidad|AD-1|
 |Imagen del sistema operativo|Oracle Linux 7.6|
 |Tipo de instancia |máquina virtual|
@@ -116,14 +116,27 @@ En esta práctica, creará instancias en cada uno de las VCN creadas en la Regi�
 
 | XXXXXX | XXXXXXXXXXX|
 |--------|------------|
-|Nombre | demoVCN2R1|
+|Nombre | web2|
 |Dominio de disponibilidad|AD-2|
 |Imagen del sistema operativo|Oracle Linux 7.6|
 |Tipo de instancia |máquina virtual|
 |Forma de instancia| VM.Standard2.1|
 |Claves SSH | agregue su clave pública SSH|
-|Virtual Cloud Network | demoVCN1R1|
+|Virtual Cloud Network | demoVCN2R1|
 |Subred | Subred Pública|
+
+En esta práctica, crearemos conexiones de interconexión entre VCN:
+
+5. Crear Peering VCN Local
+
+demoVCN1R1 :left_right_arrow: demoVCN2R1
+
+:cinema:
+
+
+
+
+
 
 
 
