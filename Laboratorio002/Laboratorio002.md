@@ -24,11 +24,11 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 ### Primer paso: Crear VCN demoVCN1R1 - Región 1 
 
-1. Abrir el menú de navegación.**Infraestructura principal** :arrow_right: **Redes** :arrow_right:**Redes de nube virtual** .
+1. Abrir el menú de navegación.  :arrow_right: **Infraestructura principal** :arrow_right: **Redes** :arrow_right:**Redes de nube virtual** .
 
 Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el lado izquierdo de la consola.
 
-2. Crear **red virtual en la nube** .
+2. Crear :arrow_right:**red virtual en la nube** .
 
 3. En el cuadro de diálogo, ingrese un Name **demoVCN1R1** para su red de nube virtual.
 
@@ -40,20 +40,27 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
  
 
 
-### Ahora crearemos recursos adicionales necesarios para las instancias en este demoVCN1R1
+
+### Ahora vamos a trabajar en el menu Recursos
+
+IMAGEN RECURSOS 
 
 6. Navegue a **puertas de enlace de Internet** en el panel lateral izquierdo y haga click en **Crear puerta de enlace de Internet**. Proporcione un nombre como **InternetGW**
 
 ![](./Imagenes/img002.png)
 
-7. Haga clic en Tabla de ruta predeterminada para ManagementVCN .
+7. **Tabla de ruta** :arrow_right: modificar **Tabla de ruta predeterminada** para demovc1r1.
+
+IMAGEN --------------------------------------------------------------------------
 
 8. Click en Editar reglas de ruta y agregue otra regla con lo siguiente:
 
      |Tipo de destino |puerta de enlace a Internet|
      |-----------------|--------------------------|
      |**Bloque CIDR de destino**| **0.0.0.0/0**|
+     |**Tipo de Objeto**| **Internet Gateway**|
      |**Puerta de enlace de Internet de destino**| **InternetGW**|
+  
      
      
      ![](./Imagenes/img003.png)
