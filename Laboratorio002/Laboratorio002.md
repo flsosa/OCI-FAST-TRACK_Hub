@@ -24,19 +24,17 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 ### Primer paso: Crear VCN demoVCN1R1 - Región 1 
 
-1. Abre el menú de navegación. En **Infraestructura principal** , vaya a **Redes** y haga click en **Redes de nube virtual** .
+1. Abrir el menú de navegación.**Infraestructura principal** :arrow_right: **Redes** :arrow_right:**Redes de nube virtual** .
 
 Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el lado izquierdo de la consola.
 
-2. Haga clic en Crear **red virtual en la nube** .
+2. Crear **red virtual en la nube** .
 
-3. En el cuadro de diálogo, ingrese un Name demoVCN1R1 para su red de nube virtual.
+3. En el cuadro de diálogo, ingrese un Name **demoVCN1R1** para su red de nube virtual.
 
-4. Asegúrese de que Crear solo red virtual en la nube esté seleccionado.
+4. Elija un bloque CIDR **192.168.0.0/16**, mantener las opciones restantes tal como están.
 
-5. Elija un bloque CIDR **192.168.0.0/16**, mantener las opciones restantes tal como están.
-
-6. Haga click en Crear red virtual en la nube (Esto crea un VCN, y puede ver la página de detalles del VCN creado.
+5. Haga click en Crear red virtual en la nube (Esto crea un VCN, y puede ver la página de detalles del VCN creado).
  
   ![](./Imagenes/img001.png)
  
@@ -44,13 +42,13 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
 
 ### Ahora crearemos recursos adicionales necesarios para las instancias en este demoVCN1R1
 
-7. Navegue a **puertas de enlace de Internet** en el panel lateral izquierdo y haga click en **Crear puerta de enlace de Internet**. Proporcione un nombre como **InternetGW**
+6. Navegue a **puertas de enlace de Internet** en el panel lateral izquierdo y haga click en **Crear puerta de enlace de Internet**. Proporcione un nombre como **InternetGW**
 
 ![](./Imagenes/img002.png)
 
-8. Haga clic en Tabla de ruta predeterminada para ManagementVCN .
+7. Haga clic en Tabla de ruta predeterminada para ManagementVCN .
 
-9. Click en Editar reglas de ruta y agregue otra regla con lo siguiente:
+8. Click en Editar reglas de ruta y agregue otra regla con lo siguiente:
 
      |Tipo de destino |puerta de enlace a Internet|
      |-----------------|--------------------------|
@@ -63,7 +61,7 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
   
  ####  Ahora vamos a crear las subredes
  
- 10. Redes :arrow_right: VCN :arrow_right: Crear Subredes
+ 9. Redes :arrow_right: VCN :arrow_right: Crear Subredes
   
   | VCN | CIDR BLOCK | SUBRED | SUBRED CIDR BLOCK | SUBRED ACCESO | AD |
 |----|--------------|-------|-------------------|---------------|----|
