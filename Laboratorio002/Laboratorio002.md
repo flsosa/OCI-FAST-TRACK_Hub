@@ -55,9 +55,9 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
 
 
 
-### Ahora vamos a trabajar en el menu Recursos
+### *Ahora vamos a trabajar en el menu Recursos*
 
-IMAGEN RECURSOS 
+
 
 6. Navegue a **puertas de enlace de Internet** en el panel lateral izquierdo y haga click en **Crear puerta de enlace de Internet**. Proporcione un nombre como **InternetGW**
 
@@ -144,13 +144,12 @@ En esta práctica, creará instancias en cada uno de las VCN creadas en la Regi�
 |Virtual Cloud Network | demoVCN2R1|
 |Subred | Subred Pública|
 
-En esta práctica, crearemos conexiones de interconexión entre VCN:
+# PRACTICA 3: VCN LOCAL PEERING 
 
-5. Crear Peering VCN Local
+El emparejamiento de VCN local es el proceso de conectar dos VCN en la misma región para que sus recursos puedan comunicarse mediante direcciones IP privadas sin enrutar el tráfico a través de Internet o de su red local. Las VCN pueden estar en la misma tenencia de Oracle Cloud Infrastructure o en otras diferentes
 
-demoVCN1R1 :left_right_arrow: demoVCN2R1
-
-:cinema:
+   ![](./Imagenes/98.png)
+   
 
 
 
