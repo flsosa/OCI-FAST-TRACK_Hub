@@ -32,9 +32,9 @@ En este ejercicio, vamos a crear tres VCN y recursos separados en cada uno de el
 
 | Nombre de VCN | REGION | 
 |----------------|-------|
-| demoVCN1R1 | US-ASHBURN |
-| demoVCN2R1|US-ASHBURN |
-| demoVCN3R2 |SA.SAOPAULO|
+| vcn1 | US-ASHBURN |
+| vcn2|US-ASHBURN |
+| vcn3 |SA.SAOPAULO|
 
 ### Primer paso: Crear VCN demoVCN1R1 - Región 1 
 
@@ -44,7 +44,7 @@ Nota: Asegúrese de que su compartimento sea el compartimento seleccionado en el
 
 2. Crear :arrow_right:**red virtual en la nube** .
 
-3. En el cuadro de diálogo, ingrese un Name **demoVCN1R1** para su red de nube virtual.
+3. En el cuadro de diálogo, ingrese un Name **vcn1** para su red de nube virtual.
 
 4. Elija un bloque CIDR **192.168.0.0/16**, mantener las opciones restantes tal como están.
 
@@ -86,7 +86,7 @@ IMAGEN -------------------------------------------------------------------------
   
   | VCN | CIDR BLOCK | SUBRED | SUBRED CIDR BLOCK | SUBRED ACCESO | AD |
 |----|--------------|-------|-------------------|---------------|----|
-|VCN1region1 | 192.168.0.0/16 | Subred_ps1|192.168.1.0/24| Public | AD1|
+|vcn1 | 192.168.0.0/16 | Subred_ps1|192.168.1.0/24| Public | AD1|
 |             |                | Subred_pv2| 192.168.2.0/24|Private | AD2|
 |              |               | Subred_ps3| 192.168.3.0/24|Public | AD3|
 |              |               | Subred_pv4 | 192.168.5.0/24 |Private | AD3|
@@ -101,7 +101,7 @@ IMAGEN -------------------------------------------------------------------------
 
 * Seleccionar :arrow_right: **VCN con  conexión a Internet** :arrow_right: **Iniciar
 
-* Proporcionar un nombre. Por ejemplo: VCN2region1
+* Proporcionar un nombre. Por ejemplo: vcn2
 
 * Verificar que todos los datos sean correctos :arrow_right: **Siguiente**
 
@@ -125,7 +125,7 @@ En esta práctica, creará instancias en cada uno de las VCN creadas en la Regi�
 |Tipo de instancia |máquina virtual|
 |Forma de instancia| VM.Standard2.1|
 |Claves SSH | agregue su clave pública SSH|
-|Virtual Cloud Network | demoVCN1R1|
+|Virtual Cloud Network | vcn1|
 |Subred | Subred_ps1|
 
 3. Deje el resto como predeterminado y haga clicK en Crear.
@@ -141,7 +141,7 @@ En esta práctica, creará instancias en cada uno de las VCN creadas en la Regi�
 |Tipo de instancia |máquina virtual|
 |Forma de instancia| VM.Standard2.1|
 |Claves SSH | agregue su clave pública SSH|
-|Virtual Cloud Network | demoVCN2R1|
+|Virtual Cloud Network | vcn2|
 |Subred | Subred Pública|
 
 # PRACTICA 3: VCN LOCAL PEERING 
@@ -149,6 +149,11 @@ En esta práctica, creará instancias en cada uno de las VCN creadas en la Regi�
 ![](./Imagenes/97.png)
 
 Una pasarela de enlace local (LPG) es un componente de un VCN para enrutar el tráfico a un VCN vinculado localmente. Como parte de la configuración de los VCN, cada administrador debe crear un LPG para su VCN. Un VCN determinado debe tener un LPG separado para cada emparejamiento local que establezca (máximo 10 LPG por VCN). En la API, un LocalPeeringGateway es un objeto que contiene información sobre el emparejamiento. No puede reutilizar un LPG para establecer más tarde otro peering con él.
+
+
+PASO 1:  Haga clic en Crear enlace de enlace local y cree dos LPG uno por uno. (vcn1 y vcn2)
+
+
    
 
 
