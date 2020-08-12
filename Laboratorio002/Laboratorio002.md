@@ -11,6 +11,20 @@
 - [X] Laboratorio 1.
 - Contar tres instancia de compute.
 
+# RED VIRTUAL EN LA NUBE 
+
+Una red virtual en la nube (VCN) es una red personalizable y privada de Oracle Cloud Infrastructure. Al igual que una red de centro de datos tradicional, la VCN le proporciona control completo de su entorno de red. 
+La creación de una VCN implica algunos aspectos clave como:
+
+* Asigne un bloque de IP privado para el VCN (rango CIDR para el VCN).
+* Los clientes pueden traer sus propias direcciones IP RFC1918.
+* Cree subredes dividiendo el rango CIDR en redes más pequeñas (subredes para front-end, back-end, base de datos)
+* Cree una puerta de enlace de Internet opcional para conectar la subred VCN con Internet. Las instancias creadas en esta subred tendrán una dirección IP pública.
+* Crear tabla de ruta con reglas de ruta para acceso a Internet
+* Cree una lista de seguridad para permitir puertos relevantes para el acceso de entrada y salida
+
+Un solo cliente puede tener múltiples VCN, lo que permite agrupar y aislar los recursos relacionados.
+
 
 ## Práctica 1: CREAR UNA RED VIRTUAL EN LA NUBE 
 
