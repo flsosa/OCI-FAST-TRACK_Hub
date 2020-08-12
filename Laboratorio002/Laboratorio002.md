@@ -155,8 +155,75 @@ PASO 1:  Haga clic en Crear enlace de enlace local y cree dos LPG uno por uno. (
 
 
    
+![](./Imagenes/95.png)
 
 
+
+![](./Imagenes/96.png)
+
+
+
+**PASO 2:  Conexión Peering VCN Local**
+
+En esta práctica, crearemos conexiones de interconexión entre los VCN:
+
+VCN1 :left_right_arrow: VCN2
+
+:one:  Vaya a *vcn1* -> Puertas de enlace de emparejamiento local:
+
+
+![](./Imagenes/94.png)
+
+
+![](./Imagenes/92.png)
+
+:two: Haga clic en vcn1 y establezca la conexión con **vcn2-lp** LPG (el cuadro de diálogo resultante le permite elegir el VCN y el LPG con el que desea mirar).
+
+* Compartimiento de red de nube virtual: el compartimiento que contiene el VCN con el que desea mirar.
+
+* Red virtual en la nube: el VCN con el que deseas mirar.
+
+* Compartimiento de la puerta de enlace local: el compartimiento que contiene el GLP con el que desea establecer la conexión.
+
+*  Unpeered Peer Gateway: el LPG con el que desea establecer la conexión.
+
+:three: Repitir el procedimiento para vcn2.
+
+Una vez que las conexiones se han conectado con éxito, debemos modificar las tablas de ruta y las listas de seguridad asociadas con cada subred para enrutar y permitir el tráfico.
+
+**vcn1**
+1. **Tablas de ruta** y agregue una regla de ruta en la tabla de enrutamiento predeterminada con lo siguiente:
+    *Tipo de objetivo: Local Peering Gateway*
+    *Destino CIDR: ----(vcn2)*
+    *Compartimiento objetivo: -----*
+    *Puerta de enlace de enlace local de destino: vcn2-lp*
+
+2. **Listas de seguridad**, y agregue una regla de lista de seguridad de ingreso en las listas de seguridad predeterminadas para el tráfico ICMP. En este ejemplo, solo estamos probando el tráfico ICMP, por lo que agregamos una regla ICMP. Para el tráfico TCP, se pueden agregar reglas TCP relevantes.
+
+Haga clic en Editar reglas y agregue lo siguiente:
+
+    * Fuente CIDR: vcn2
+
+    * Protocolo IP: ICMP
+
+    * Tipo: Todos
+ 
+ **vcn2**
+1. **Tablas de ruta** y agregue una regla de ruta en la tabla de enrutamiento predeterminada con lo siguiente:
+    *Tipo de objetivo: Local Peering Gateway*
+    *Destino CIDR: ----(vcn1)*
+    *Compartimiento objetivo: -----*
+    *Puerta de enlace de enlace local de destino: vcn1-lp*
+
+2. **Listas de seguridad**, y agregue una regla de lista de seguridad de ingreso en las listas de seguridad predeterminadas para el tráfico ICMP. En este ejemplo, solo estamos probando el tráfico ICMP, por lo que agregamos una regla ICMP. Para el tráfico TCP, se pueden agregar reglas TCP relevantes.
+
+Haga clic en Editar reglas y agregue lo siguiente:
+
+    * Fuente CIDR: vcn1
+
+    * Protocolo IP: ICMP
+
+    * Tipo: Todos
 
 
 
