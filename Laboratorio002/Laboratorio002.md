@@ -146,9 +146,9 @@ En esta práctica, creará instancias en cada uno de las VCN creadas en la Regi�
 
 # PRACTICA 3: VCN LOCAL PEERING 
 
-El emparejamiento de VCN local es el proceso de conectar dos VCN en la misma región para que sus recursos puedan comunicarse mediante direcciones IP privadas sin enrutar el tráfico a través de Internet o de su red local. Las VCN pueden estar en la misma tenencia de Oracle Cloud Infrastructure o en otras diferentes
+![](./Imagenes/97.png)
 
-   ![](./Imagenes/98.png)
+Una pasarela de enlace local (LPG) es un componente de un VCN para enrutar el tráfico a un VCN vinculado localmente. Como parte de la configuración de los VCN, cada administrador debe crear un LPG para su VCN. Un VCN determinado debe tener un LPG separado para cada emparejamiento local que establezca (máximo 10 LPG por VCN). En la API, un LocalPeeringGateway es un objeto que contiene información sobre el emparejamiento. No puede reutilizar un LPG para establecer más tarde otro peering con él.
    
 
 
