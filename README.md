@@ -18,10 +18,14 @@
 - [Laboratorio 6:Data Safe](/Laboratorio003/labs003.md)
 
 ## Documentación
+
 - [Centro de arquitectura de Oracle Cloud Infrastructure](https://www.oracle.com/ar/cloud/architecture-center.html)
-- [Servicios Cloud Infrastructure] (https://www.oracle.com/ar/cloud/products.html)
+
+- [Servicios Cloud Infrastructure](https://www.oracle.com/ar/cloud/products.html)
+
 - [Documentación de Oracle Cloud Infrastructure](https://docs.cloud.oracle.com/es-ww/iaas/Content/home.htm)
 
 ## ¿Qué son los servicios en la nube Always Free?
-- [Oracle Cloud Free Tier] (https://www.oracle.com/cloud/free/?&source=:ow:o:p:nav:0916BCButton&intcmp=:ow:o:p:nav:0916BCButton)
+
+- [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/?&source=:ow:o:p:nav:0916BCButton&intcmp=:ow:o:p:nav:0916BCButton)
 
