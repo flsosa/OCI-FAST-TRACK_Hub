@@ -13,9 +13,9 @@
 
 - [Laboratorio 4: Storage Cloud Service ](/Laboratorio004/lab004.md)
 
-- [Laboratorio 5: Balanceador de Carga](/Laboratorio005/labs005.md)
+- [Laboratorio 5: Balanceador de Carga](/Laboratorio005/lab005.md)
 
-- [Laboratorio 6: Data Safe](/Laboratorio006/labs006.md)
+- [Laboratorio 6: Data Safe](/Laboratorio006/lab006.md)
 
 ## Documentación
 
