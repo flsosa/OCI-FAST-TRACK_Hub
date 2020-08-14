@@ -9,9 +9,9 @@
 
 - [Laboratorio 2: Networking](/Laboratorio002/Laboratorio002.md)
 
-- [Laboratorio 3: Oracle Database Cloud Service](/Laboratorio003/lab003.md)
+- [Laboratorio 3: Storage Cloud Service](/Laboratorio004/lab004.md)
 
-- [Laboratorio 4: Storage Cloud Service ](/Laboratorio004/lab004.md)
+- [Laboratorio 4: Oracle Database Cloud Service ](/Laboratorio003/lab003.md)
 
 - [Laboratorio 5: Balanceador de Carga](/Laboratorio005/lab005.md)
 
