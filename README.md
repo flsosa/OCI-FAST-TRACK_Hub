@@ -7,7 +7,7 @@
 
 - [Laboratorio 1: Conceptos Básicos de OCI](/Laboratorio001/labs01A.md)
 
-- [Laboratorio 2: Networking](/Laboratorio002/Laboratorio00.md)
+- [Laboratorio 2: Networking](/Laboratorio002/Laboratorio002.md)
 
 - [Laboratorio 3: Storage Cloud Service](/Laboratorio004/lab004.md)
 
