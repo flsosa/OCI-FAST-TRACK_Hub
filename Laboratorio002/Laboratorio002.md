@@ -190,6 +190,9 @@ Haga clic en Editar reglas y agregue lo siguiente:
     * Protocolo IP: ICMP
 
     * Tipo: Todos
+    
+    
+
 
 
 
