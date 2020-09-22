@@ -46,3 +46,54 @@ A continuación, encontrará los comandos necesarios para iniciar un servidor we
 7. sudo su - 
 8. 'Este es el servidor web 1 de Oracle que se ejecuta en el taller de OCI'> /var/www/html/index.html
 En la segunda instancia, repetirá los comandos del 1 al 7 y el comando 8 será: 8. echo 'Este es el servidor web Oracle 2 ejecutándose en OCI Workshop'> /var/www/html/index.html
+
+- Pruebe el comportamiento de Apache, todo lo que necesita hacer es usar la IP pública de la instancia de Compute en el navegador para verificar si aparece la página principal de Apache.
+
+RECORDATORIO: Antes de probar Apache en su navegador, asegúrese de que ya ha creado una regla de ingreso en la lista de seguridad de VCN, por lo que el puerto 80 está libre de tráfico.
+
+Asegúrese de iniciar la creación de Load Balancer solo después de que ambas llamadas en apache estén funcionando. Esto es importante, porque si crea el balanceador de carga sin un servicio disponible, se creará en estado de "Error". Load Balancer suele tardar 5 minutos en "calibrar" su estado.
+
+Nuestro objetivo es crear el servicio Load Balancer solo después de que ambos servidores Apache estén en ejecución, por lo que el servicio LB tendrá un estado "listo" y estará listo para ser probado.
+
+##  Proceso de creación del equilibrador de carga
+
+Para acceder a la interfaz de Load Balancer, nuevamente, vamos a comenzar desde el "Menú de acción"
+
+Menu de Opciones --> Redes --> Balanceador de Carga --> Luego presione el botón Crear balanceador de carga
+
+## Creando Load Balancer
+
+La pantalla de creación de Load Balancer es un modelo basado en asistente, donde la interfaz lo guiará en el proceso. En la pantalla principal, proporcionará la siguiente información:
+
+- Nombre: lb-apache
+- Tipo de visibilidad: público
+- Ancho de banda: pequeño 100 Mbps
+- VCN: prueba de VCN
+- Subred1: SubredAD2
+- Subred2: SubredAD3
+
+  (elija 2 subredes, las mismas subredes donde se crearon sus instancias informáticas)
+  
+  ## Establecer la política del equilibrador de carga
+  
+  Ingrese a los servidores de Backend Set
+  
+  Como último paso, defina el tipo de tráfico 
+  
+  ## Prueba del equilibrador de carga
+  
+Para simular un entorno de aplicación, necesitamos iniciar un servicio web en ambas instancias de Compute.
+
+
+Para obtener diferentes resultados en las llamadas del balanceador de carga, agregue diferentes contenidos al archivo Index.html en cada proceso.
+
+## Para finalizar puedes realizar una prueba conceptual :trophy:
+
+
+# Te espereamos en el próximo Laboratorio  :rocket:
+
+![](./img/6.png)[](https://www.oracle.com/index.html)
+
+[Regrasar a la Pagina Principal :arrow_left:](../README.md)
+
+
