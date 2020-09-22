@@ -13,7 +13,7 @@
 
 - [Laboratorio 4: Oracle Database Cloud Service ](/Laboratorio003/lab003.md)
 
-- [Laboratorio 5: Balanceador de Carga](/Laboratorio005/lab005.md)
+- [Laboratorio 5: Balanceador de Carga](/Laboratorio006/labs005.md)
 
 - [Laboratorio 6: Data Safe](/Laboratorio006/lab006.md)
 
